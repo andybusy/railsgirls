@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   #root :to => redirect('/ideas')
   #root to: redirect('/ideas')
-  root to: redirect('/pages/info')
+  root 'pages#info'
   get 'pages/info'
 
   resources :ideas
